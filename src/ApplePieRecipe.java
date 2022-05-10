@@ -59,7 +59,7 @@ public class ApplePieRecipe {
     }
 
     public void clotheForm() {
-        System.out.println("Gebruik één deel van het deeg om de bodem van de vorm te bedekken. Gebruik een deel van het deeg om je randen te bekleden. Strooi het panneermeel op de bodem van de beklede vorm. De paneermeel neemt het vocht van de appels op.");
+        System.out.println("Gebruik één deel van het deeg om de bodem van de vorm te bedekken. Gebruik een deel van het deeg om je randen te bekleden. Strooi het paneermeel op de bodem van de beklede vorm. De paneermeel neemt het vocht van de appels op.");
     }
 
     public void fillForm() {
