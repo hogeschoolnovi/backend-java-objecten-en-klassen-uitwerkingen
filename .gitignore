@@ -1,0 +1,3 @@
+# De gitignore is om github te vertellen dat je bepaalde bestanden of mappen niet wilt uploaden.
+.idea
+out

@@ -1,5 +1,9 @@
+// Definieer de klasse.
 public class ApplePieRecipe {
 
+    // Definieer de ingredienten. Dit zijn klasse variabelen. Dat betekent dat je alle methodes binnen deze klasse er toegang toe hebben.
+    // We roepen elke keer de constructor van Indredients aan met het "new" keyword, maar elke keer met andere argumenten.
+    // (sidenote: argumenten zijn de ingevulde parameters, dus de constructor heeft parameters, het object gemaakt met het new-keyword heeft argumenten)
     Ingredients butter = new Ingredients(200, "gram", "ongezouten roomboter" );
     Ingredients sugar = new Ingredients(200, "gram", "witte bastard suiker" );
     Ingredients bakingSoda = new Ingredients(400, "gram", "zelfrijzend bakmeel" );
@@ -13,6 +17,9 @@ public class ApplePieRecipe {
 
     public void printIngredients() {
         System.out.println("Ingredienten nodig voor dit recept: ");
+        // Hier roepen we steeds de getAmount(), getUnit() en getName() methode van Ingredients aan,
+        // maar elke keer voor een andere instantiatie van Ingredients die met andere waardes in de constructor zijn aangeroepen
+        // en dus krijgen we elke keer een ander resultaat.
         System.out.println(butter.getAmount() + " " + butter.getUnit() + " " + butter.getName());
         System.out.println(sugar.getAmount() + " " + sugar.getUnit() + " " + sugar.getName());
         System.out.println(bakingSoda.getAmount() + " " + bakingSoda.getUnit() + " " + bakingSoda.getName());
@@ -26,6 +33,7 @@ public class ApplePieRecipe {
     }
     public void printRecipe(){
         System.out.println("Doorloop de volgende stappen een voor een:");
+        // We roepen hier telkens een andere methode aan. Elke methode print op zijn beurt een string uit.
         preHeatOven();
         divideEgg();
         mixDoug();
