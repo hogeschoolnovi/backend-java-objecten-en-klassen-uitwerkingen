@@ -1,6 +1,19 @@
 package Bonus;
 
 
+
+import Bonus.Opdracht2.Winkel;
+import Bonus.Opdracht3.Bedrijf;
+import Bonus.Opdracht3.Manager;
+import Bonus.Opdracht4.Chameleon;
+import Bonus.Opdracht4.Giraf;
+import Bonus.Opdracht4.Lion;
+import Bonus.Opdracht4.Zoo;
+import Bonus.Opdracht5.Auto;
+import Bonus.Opdracht5.Engine;
+import Bonus.Opdracht5.Wheel;
+import Bonus.Opdracht1.Film;
+
 import java.time.LocalDate;
 
 public class Main {

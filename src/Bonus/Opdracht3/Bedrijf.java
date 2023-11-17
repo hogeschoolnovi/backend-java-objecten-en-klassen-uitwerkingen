@@ -1,4 +1,6 @@
-package Bonus;
+package Bonus.Opdracht3;
+
+import Bonus.Opdracht3.Manager;
 
 public class Bedrijf {
     //## Opdracht 3: Bedrijf

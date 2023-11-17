@@ -1,4 +1,8 @@
-package Bonus;
+package Bonus.Opdracht4;
+
+import Bonus.Opdracht4.Chameleon;
+import Bonus.Opdracht4.Giraf;
+import Bonus.Opdracht4.Lion;
 
 public class Zoo {
 

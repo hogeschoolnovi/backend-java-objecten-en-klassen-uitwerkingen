@@ -1,12 +1,13 @@
-package Bonus;
+package Bonus.Opdracht4;
 
-public class Chameleon {
+public class Giraf {
+
     private final String name;
     private final String species;
     private final String food;
     private final String shelter;
 
-    public Chameleon(String name, String species, String food, String verblijf) {
+    public Giraf(String name, String species, String food, String verblijf) {
         this.name = name;
         this.species = species;
         this.food = food;

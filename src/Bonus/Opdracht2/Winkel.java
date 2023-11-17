@@ -1,4 +1,4 @@
-package Bonus;
+package Bonus.Opdracht2;
 
 public class Winkel {
     private final String cola = "cola";

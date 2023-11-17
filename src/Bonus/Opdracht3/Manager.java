@@ -1,4 +1,4 @@
-package Bonus;
+package Bonus.Opdracht3;
 
 public class Manager {
     private final String name;
