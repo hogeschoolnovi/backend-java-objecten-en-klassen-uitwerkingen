@@ -5,8 +5,8 @@ public class Auto {
     private double displacement;
     private Integer topspeed;
     private String kleur;
-    private String feulType;
-    private Integer feul;
+    private String fuelType;
+    private Integer fuel;
     private String brand;
     private Wheel wheelLF;
     private Wheel wheelRF;
@@ -14,12 +14,12 @@ public class Auto {
     private Wheel wheelRB;
     private Engine engine;
 
-    public Auto(String kleur, String feulType, Integer feul, String brand, Wheel wheel, Engine engine) {
+    public Auto(String kleur, String fuelType, Integer fuel, String brand, Wheel wheel, Engine engine) {
         displacement = engine.getDisplacement();
         topspeed = wheel.topspeed();
         this.kleur = kleur;
-        this.feulType = feulType;
-        this.feul = feul;
+        this.fuelType = fuelType;
+        this.fuel = fuel;
         this.brand = brand;
         wheelLF = wheel;
         wheelLB = wheel;
@@ -29,19 +29,19 @@ public class Auto {
     }
 
     public void printInfo(){
-        System.out.println("Deze "+ brand +" auto heeft topsnelheid van " + topspeed + " en rijdt op " + feulType);
+        System.out.println("Deze "+ brand +" auto heeft topsnelheid van " + topspeed + " en rijdt op " + fuelType);
         System.out.println(engine.engineInfo());
     }
 
-    public Integer getFeulLevel() {
-        return feul;
+    public Integer getFuelLevel() {
+        return fuel;
     }
 
     public void tanken(int amount) {
-        feul += amount;
+        fuel += amount;
     }
 
-    public String getFeulType() {
-        return feulType;
+    public String getFuelType() {
+        return fuelType;
     }
 }
