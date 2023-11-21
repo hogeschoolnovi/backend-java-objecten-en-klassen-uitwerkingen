@@ -27,15 +27,15 @@ public class Car {
         System.out.println(engine.engineInfo());
     }
 
-    public Integer getFeulLevel() {
-        return feul;
+    public Integer getFuelLevel() {
+        return fuel;
     }
 
-    public void refeul(int amount) {
-        feul += amount;
+    public void refuel(int amount) {
+        fuel += amount;
     }
 
-    public String getFeulType() {
-        return feulType;
+    public String getFuelType() {
+        return fuelType;
     }
 }
