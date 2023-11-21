@@ -1,18 +1,16 @@
 package Bonus.Opdracht3;
 
-import Bonus.Opdracht3.Manager;
-
-public class Bedrijf {
-    //## Opdracht 3: Bedrijf
+public class Company {
+    //## Opdracht 3: Company
 //        Maak een _Bedrijf_ klasse met attributen voor bedrijfsnaam en de manager.
 //
 //                Maak een _Manager_ klasse met attributen voor naam en leeftijd.
 //
-    private final String bedrijfsnaam;
+    private final String companyName;
     private Manager manager;
 
-    public Bedrijf(String bedrijfsnaam) {
-        this.bedrijfsnaam = bedrijfsnaam;
+    public Company(String companyName) {
+        this.companyName = companyName;
     }
 
     public void hireManager(Manager manager){
@@ -20,16 +18,16 @@ public class Bedrijf {
     }
 
     public void getInfo(){
-        String managerNaam;
+        String managerName;
 
         if(manager != null){
-            managerNaam = manager.getName();
+            managerName = manager.getName();
         } else {
-            managerNaam = "Dit bedrijf zoekt nog een manager";
+            managerName = "Dit bedrijf zoekt nog een manager";
         }
 
-        String info = "Bedrijfsnaam: " + bedrijfsnaam +
-                "\nManager: " + managerNaam;
+        String info = "Bedrijfsnaam: " + companyName +
+                "\nManager: " + managerName;
 
         System.out.println(info);
     }

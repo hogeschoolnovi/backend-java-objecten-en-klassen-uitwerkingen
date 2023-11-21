@@ -1,13 +1,13 @@
 package Bonus.Opdracht4;
 
-public class Giraf {
+public class Giraffe {
 
     private final String name;
     private final String species;
     private final String food;
     private final String shelter;
 
-    public Giraf(String name, String species, String food, String verblijf) {
+    public Giraffe(String name, String species, String food, String verblijf) {
         this.name = name;
         this.species = species;
         this.food = food;

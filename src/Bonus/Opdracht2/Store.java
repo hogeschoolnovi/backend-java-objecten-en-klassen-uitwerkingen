@@ -1,6 +1,6 @@
 package Bonus.Opdracht2;
 
-public class Winkel {
+public class Store {
     private final String cola = "cola";
     private final String candles = "candles";
     private int colaAmount = 0;

@@ -1,30 +1,24 @@
 package Bonus.Opdracht5;
 
-public class Auto {
+public class Car {
 
     private double displacement;
     private Integer topspeed;
-    private String kleur;
+    private String color;
     private String feulType;
     private Integer feul;
     private String brand;
-    private Wheel wheelLF;
-    private Wheel wheelRF;
-    private Wheel wheelLB;
-    private Wheel wheelRB;
+    private WheelType wheelType;
     private Engine engine;
 
-    public Auto(String kleur, String feulType, Integer feul, String brand, Wheel wheel, Engine engine) {
+    public Car(String color, String feulType, Integer feul, String brand, WheelType wheelType, Engine engine) {
         displacement = engine.getDisplacement();
-        topspeed = wheel.topspeed();
-        this.kleur = kleur;
+        topspeed = wheelType.topspeed();
+        this.color = color;
         this.feulType = feulType;
         this.feul = feul;
         this.brand = brand;
-        wheelLF = wheel;
-        wheelLB = wheel;
-        wheelRB = wheel;
-        wheelRF = wheel;
+        this.wheelType = wheelType;
         this.engine = engine;
     }
 
@@ -37,7 +31,7 @@ public class Auto {
         return feul;
     }
 
-    public void tanken(int amount) {
+    public void refeul(int amount) {
         feul += amount;
     }
 
