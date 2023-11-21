@@ -5,25 +5,25 @@ public class Car {
     private double displacement;
     private Integer topspeed;
     private String color;
-    private String feulType;
-    private Integer feul;
+    private String fuelType;
+    private Integer fuel;
     private String brand;
     private WheelType wheelType;
     private Engine engine;
 
-    public Car(String color, String feulType, Integer feul, String brand, WheelType wheelType, Engine engine) {
+    public Car(String color, String fuelType, Integer fuel, String brand, WheelType wheelType, Engine engine) {
         displacement = engine.getDisplacement();
         topspeed = wheelType.topspeed();
         this.color = color;
-        this.feulType = feulType;
-        this.feul = feul;
+        this.fuelType = fuelType;
+        this.fuel = fuel;
         this.brand = brand;
         this.wheelType = wheelType;
         this.engine = engine;
     }
 
     public void printInfo(){
-        System.out.println("Deze "+ brand +" auto heeft topsnelheid van " + topspeed + " en rijdt op " + feulType);
+        System.out.println("Deze "+ brand +" auto heeft topsnelheid van " + topspeed + " en rijdt op " + fuelType);
         System.out.println(engine.engineInfo());
     }
 

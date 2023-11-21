@@ -50,9 +50,9 @@ public class Main {
         WheelType wheelType = new WheelType("Michelin", 50, 2.7);
         Engine engine = new Engine(2.2, 500);
         Car car = new Car("blauw", "benzine", 500, "BMW", wheelType, engine);
-        System.out.println("De car heeft nu " + car.getFeulLevel() + " liter " + car.getFeulType());
-        car.refeul(200);
-        System.out.println("Na het tanken heeft de car nu " + car.getFeulLevel() + " liter " + car.getFeulType());
+        System.out.println("De car heeft nu " + car.getFuelLevel() + " liter " + car.getFuelType());
+        car.refuel(200);
+        System.out.println("Na het tanken heeft de car nu " + car.getFuelLevel() + " liter " + car.getFuelType());
         car.printInfo();
 
 
