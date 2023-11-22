@@ -9,10 +9,10 @@ public class Film {
     private LocalDate releasedate;
     private String genre;
 
-    public Film(String titel, String regisseur, LocalDate releasedatum, String genre) {
-        this.title = titel;
-        this.director = regisseur;
-        this.releasedate = releasedatum;
+    public Film(String title, String director, LocalDate releaseDate, String genre) {
+        this.title = title;
+        this.director = director;
+        this.releasedate = releaseDate;
         this.genre = genre;
     }
 
